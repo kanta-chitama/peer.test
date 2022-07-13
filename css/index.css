@@ -1,0 +1,514 @@
+@charset "UTF-8";
+
+/* firstview */
+.first-view {
+  height: calc(100vh - 110px);
+  background-image: url(../images/tomidaisi2021_stage_upper.jpg);
+  background-size: cover;
+  background-position: center top;
+  display: flex;
+  align-items: center;
+}
+.home-mv-txts {
+  position: absolute;
+  left: 0;
+  line-height: 1;
+  font-family: 'din-condensed', "Yu Gothic", "YuGothic", "Hiragino Kaku Gothic Pro", "Meiryo", verdana, "Osaka", "MS PGothic", Sans-Serif;
+  max-width: 90%;
+}
+.home-mv-h {
+  margin-bottom: 10px;
+  font-size: 8vw;
+}
+.home-mv-h span {
+  background: #fff;
+  padding: 5px 5px;
+  letter-spacing: 4px;
+  display: inline-block;
+  margin-bottom: 15px;
+}
+.home-mv-lead span {
+  background: #fff;
+  font-weight: bold;
+  display: inline-block;
+  padding: 0.1em;
+  font-size: 2.7rem;
+  letter-spacing: 1px;
+}
+.first-time {
+  margin-bottom: 20px;
+}
+.theme {
+  display: block;
+  content: "";
+  height: 20px;
+}
+
+/* TOPICPHOTO */
+/* .first-photo {
+  background-color: #fff;
+} */
+.recommended {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.item-list {
+  display: flex;
+  padding: 20px 60px 10px 30px;
+  overflow: scroll;
+  /* IE, Edge 対応 */
+ -ms-overflow-style: none;
+ /* Firefox 対応 */
+ scrollbar-width: none;
+}
+/* Chrome, Safari 対応 */
+.item-list::-webkit-scrollbar {
+ display:none;
+}
+.item-list li {
+  flex-shrink: 0;
+  width: 260px;
+  margin-left: 40px;
+}
+.item-list li:first-child {
+  margin-left: 5px;
+}
+
+/* NEWS */
+.newsarea {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  margin: 0 auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.newsarea-title {
+  padding-right: 50px;
+}
+.topic {
+  font-size: 6.25rem;
+  font-family: 'din-condensed', "Yu Gothic", "YuGothic", "Hiragino Kaku Gothic Pro", "Meiryo", verdana, "Osaka", "MS PGothic", Sans-Serif;
+  font-weight: bold;
+  text-align: center;
+}
+.newsarea-title h3::after {
+  content: '';
+  display: block;
+  width: 186px;
+  height: 3px;
+  background-color: #000;
+  margin: -9px auto;
+}
+.news-list {
+  margin-top: 29px;
+  position: relative;
+}
+.button26 {
+  text-align: center;
+}
+.button26 a {
+  display: inline-block;
+  position: relative;
+  padding: 1em 110px 1em 0em;
+  color: #333;
+  font-size: 18px;
+  font-weight: 700;
+  transition: 0.3s;
+}
+.button26 a::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  width: 80px;
+  height: 80px;
+  border: 3px solid #aaaaaa;
+  border-radius: 50vh;
+  transition: 0.3s;
+  
+}
+.button26 a::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 40px;
+  transform: translateY(-50%) rotate(45deg);
+  width: 5px;
+  height: 5px;
+  border-top: 2px solid #333333;
+  border-right: 2px solid #333333;
+  transition: 0.3s;
+  
+}
+
+.news-list li {
+  margin-bottom: 30px;
+}
+.time_item {
+  display: flex;
+  align-items: center;
+}
+
+.fade_y a {
+  display: flex;
+  align-items: center;
+  text-decoration:none;
+  position: relative;
+  /* display: inline-block; */
+}
+.fade_y a:hover {
+  text-decoration:underline;
+}
+.time {
+  margin-right: 20px;
+  margin-bottom: -1px;
+  display: inline-block;
+}
+.item {
+  margin-top: 4px;
+  padding: 4px 10px;
+  margin-right: 15px;
+  font-size: 4px;
+  font-weight: 300;border-radius: 4px;
+}
+.dantai {
+  background-color: rgb(160, 189, 249);
+}
+.other {
+  background-color: rgb(255, 168, 54);
+}
+.en {
+  font-family: "DIN";
+}
+.time span {
+  display: inline-block;
+  font-size: 0.8rem;
+  letter-spacing: 0.1em;
+  color: #929191;
+}
+.underline {
+  line-height: 23px;
+}
+
+/* 富大祭とは */
+.about {
+  background-image:
+	 repeating-linear-gradient(-45deg,#fff, #fff 3px,transparent 0, transparent 6px);
+}
+.lead {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about-text {
+  width: 40%;
+}
+.about-text p {
+  line-height: 2;
+  text-align: left;
+  padding-right: 40px;
+  margin-bottom: 10px;
+}
+.about-textp p:not(:last-child) {
+  margin-bottom: 10px;
+}
+.map-motto {
+  width: 25%;
+  margin-left: 20px;
+}
+.mainbiju_title {
+  margin-top: 7px;
+  font-size: 6px;
+}
+.motto {
+  display: flex;
+  margin-top: 40px;
+}
+.motto-right span {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  padding-bottom: 10px;
+  padding-right: 5px;
+  border-bottom: 3px solid;
+  width: 342px;
+  color: #333;
+  font-size: 18px;
+  font-weight: 700;
+  transition: 0.3s;
+}
+.motto-right span::after {
+  content: '';
+  width: 14px;
+  height: 14px;
+  border-right: 5px solid #1a1a1a;
+  border-bottom: 5px solid #1a1a1a;
+  transform: rotate(-45deg);
+}
+
+.motto-right {
+  width: 300px;
+}
+
+
+
+.link-button-area {
+  text-align: center;
+  margin-top: 40px;
+}
+.link-buttom {
+  background-color: #c7f1ea;
+  display: inline-block;
+  min-width: 180px;
+  line-height: 28px;
+  border-radius: 18px;
+}
+.link-buttom:hover {
+  background-color: rgb(187, 187, 187);
+}
+
+
+.twitter {
+  max-width: 1200px;
+  margin: 20px auto;
+}
+.twitter h2 {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.twitter h2::after {
+  content: '';
+  display: block;
+  width: 36px;
+  height: 2px;
+  background-color: #000;
+  margin: 26px auto;
+} 
+.twitter_display {
+  text-align: center;
+}
+.twitter_mobile {
+  display: none;
+}
+
+.sponsor {
+  max-width: 1200px;
+  margin: 60px auto;
+}
+.sponsor h2 {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.sponsor h2::after {
+  content: '';
+  display: block;
+  width: 36px;
+  height: 2px;
+  background-color: #000;
+  margin: 26px auto;
+}
+.sponsor-grid {
+  display: flex;
+  justify-content: space-between;
+}
+.sponsor-grid li {
+  width: 23%;
+}
+
+
+
+
+#logo_loader {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 101;
+  background-color: rgb(255, 255, 255);
+}
+#logo_loader .f_logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 320px;
+  height: 100px;
+  text-align: center;
+  color: #fff;
+  font-size: 30px;
+}
+#logo_loader .f_logo img {
+  width: 100%;
+  height: auto;
+}
+#logo_loader .f_logo:before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 110%;
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  top: 0;
+  left: 100%;
+  animation: loadLogo 1.5s;
+}
+@keyframes loadLogo {
+  0% {
+    left: 0;
+  }
+  50% {
+    left: 0;
+  }
+  100% {
+    left: 100%;
+  }
+}
+#logo_loader .f_logo:before {
+  animation: loadLogo 1.5s;
+}
+#logo_loader.open {
+  animation-name: slideOut;
+  animation-fill-mode: forwards;
+  animation-duration: 2s;
+  animation-delay: 2s;
+}
+
+@keyframes slideOut {
+0% {
+  transform: translateX(0%);
+}
+50% {
+  transform: translateX(0%);
+}
+100% {
+  transform: translateX(100%);
+}
+}
+
+
+
+
+
+@media (max-width: 800px) {
+  .first-view {
+    height: 50vh;
+    align-items: center;
+    padding-bottom: 30px;
+  }
+  .home-mv-txt {
+    bottom: 47vh;
+  }
+  .home-mv-h span {
+    margin-right: 20px;
+    letter-spacing: 1px;
+    margin-bottom: 0px;
+  }
+  .home-mv-lead span {
+    font-size: 1.3rem;
+  }
+  .first-time {
+    margin-bottom: 10px;
+  }
+
+  .topic {
+    font-size: 4rem;
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
+  
+
+  .lead {
+    display: block;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  .lead p {
+    text-align-last: left;
+  }
+  .about-text {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .about-text p {
+   padding-right: 0;
+  }
+  .news-list {
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align-last: left;
+  }
+  .newsarea {
+    display: block;
+  }
+  .newsarea-title {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 33px;
+  }
+  .newsarea-title h3::after {
+    margin: -5px auto;
+    width: 131px;
+  }
+  .fade_y a {
+    display: block;
+    border-bottom: solid 1px;
+    padding-bottom: 25px;
+  }
+  .underline {
+    line-height: 23px;
+    margin-top: 9px;
+    font-weight: 100;
+  }
+  .button26 {
+    margin-top: 50px;
+    margin-bottom: 30px;
+  }
+  
+  .item {
+    margin-top: 0;
+  }
+ 
+  .map-motto {
+    width: 90%;
+  }
+  .motto-right span {
+    width: 100%;
+  }
+
+  .twitter_pc {
+    display: none;
+  }
+  .twitter_mobile {
+    display: block;
+  }
+  .sponsor-grid {
+    display: block;
+    margin: 0 auto;
+  }
+  .sponsor-grid li {
+    margin-top: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 90%;
+  } 
+} 
+
+

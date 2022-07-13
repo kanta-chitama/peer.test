@@ -1,0 +1,132 @@
+﻿@charset "utf-8";
+/* --------------------------------------------------------
+	reset
+-------------------------------------------------------- */
+@import url('https://use.fontawesome.com/releases/v5.6.3/css/all.css');
+
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td {
+	margin: 0;
+	padding: 0;
+}
+address,caption,cite,code,dfn,em,strong,th,var {
+	font-style: normal;
+}
+body {
+	color: #333333;
+	font-size: 100%;
+	font-family: "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN",verdana,"メイリオ", Meiryo, sans-serif;
+	line-height: 1.5;
+	background: url(null) fixed;
+	background-color: #fff;
+}
+html {
+	overflow-y: scroll;
+}
+article,aside,canvas,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section,summary { 
+	display:block;
+}
+img {
+	max-width: 100%;
+	height: auto;
+	border: 0;
+}
+ul, ol {
+	list-style: none;
+}
+table {
+	border-spacing: 0;
+	empty-cells: show;
+}
+a,a:link,a:visited,a:hover,a:active{
+	color:#054691;
+	text-decoration:none;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* -----------------------------------------------------------
+	news
+----------------------------------------------------------- */
+
+.news_container {
+	width: 90%;
+	max-width:1000px;
+	margin: 50px auto;
+}
+.news_title {
+	color: #24b224;
+	text-align: center;
+	font-size: 20px;
+	font-weight: bold;
+}
+.news_list {
+	margin: 20px 0;
+	border-top: 1px dashed #24b224;
+}
+.news_list li {
+	padding: 15px 5px;
+	border-bottom: 1px dashed #2eb087;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+}
+.date {
+	font-size: 16px;
+	margin-right: 10px;
+}
+.category {
+	display: inline-block;
+	color: #fff;
+	width: 120px;
+	font-size: 14px;
+	text-align: center;
+	margin-right: 10px;
+	padding: 2px 10px;
+	background-color: #75b46e;
+}
+.news_text a {
+	color: #333;
+}
+
+.news_btn {
+	text-align: center;
+	margin-top: 50px;
+}
+.news_btn a {
+	color: #75b46e;
+}
+.btn {
+	color: #75b46e;
+	padding: 10px 50px;
+	background: #fff;
+	border: 2px solid #75b46e;
+	border-radius: 50px;
+	transition: all 0.5s;
+}
+.btn:hover {
+	color: #fff;
+	background: #75b46e;
+}
+.btn:after {
+	font-family: 'Font Awesome 5 Free';
+	content: "\f0da";
+	font-weight: 900;
+	padding-left: 10px;
+}
+
+@media screen and (max-width: 559px) {
+	.news_container {
+		width: 100%;
+		padding: 0 20px;
+	}
+	.news_text a {
+		display: block;
+		margin-top: 10px;
+		text-overflow: ellipsis;
+		overflow: hidden;
+	}
+}

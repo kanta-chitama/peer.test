@@ -1,0 +1,206 @@
+@charset "UTF-8";
+
+*,
+::before,
+::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+ul,
+ol {
+  list-style: none;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+body {
+  font-family: 'Noto Sans JP', "Helvetica Neue", "Helvetica", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Arial", "Yu Gothic", "Meiryo", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: #000000;
+  line-height: 1;
+  background-color: #f2f2f2;
+  list-style: none;
+}
+img {
+  max-width: 100%;
+}
+.header-inner {
+  height: 110px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 40px;
+  padding-right: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.toggle-menu-button {
+  display: none;
+}
+.header-logo {
+  display: block;
+  width: 200px;
+}
+.site-menu ul {
+  display: flex;
+}
+.site-menu ul li {
+  margin-left: 20px;
+  margin-right: 20px;
+  border-left: 1px solid black;
+  padding-left: 10px;
+}
+.icon {
+  display: none;
+}
+
+.footer {
+  color: #ffffff;
+  background-color: #24211b;
+  padding-top: 30px;
+  padding-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer-logo {
+  display: block;
+  width: 235px;
+  margin-top: 90px;
+}
+.icon-footer {
+  display: contents;  
+ }
+ .icon-footer ul {
+   display: flex;
+   justify-content: center;
+   margin-top: 26px;
+   margin-bottom: 20px;
+ }
+ .icon-footer li {
+   width: 25px;
+   margin-right: 20px;
+   margin-left: 20px;
+ }
+
+.footer-site-menu ul li {
+   border: none;
+}
+.footer-tel {
+  font-size: 13px;
+  margin-top: 28px;
+  line-height: 20px;
+}
+.footer-time {
+  font-size: 13px;
+  margin-top: 20px;
+  text-align: center;
+  line-height: 20px;
+}
+.copyright {
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 90px;
+}
+
+@media (max-width: 800px) {
+   .site-menu ul {
+     display: block;
+     text-align: center;
+     /* margin-bottom: 20px; */
+     padding-bottom: 40px;
+   }
+   .site-menu li {
+     margin-top: 40px;
+   }
+   .icon {
+    display: contents;  
+   }
+   .icon ul {
+     display: flex;
+     justify-content: center;
+     margin-bottom: 20px;
+   }
+   .icon li {
+     width: 25px;
+     margin-right: 20px;
+     margin-left: 20px;
+   }
+   .header {
+     position: fixed;
+     top: 0;
+     left: 0;
+     right: 0;
+     background-color: #ffffff;
+     height: 50px;
+     z-index: 10;
+     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1)  ;
+   }
+   .header-inner {
+     padding-left: 20px;
+     padding-right: 20px;
+     height: 100%;
+     position: relative;
+
+   }
+   .header-logo {
+     width: 100px;
+   }
+   .header-logo h2 {
+     font-family: 'din-condensed', "Yu Gothic", "YuGothic", "Hiragino Kaku Gothic Pro", "Meiryo", verdana, "Osaka", "MS PGothic", Sans-Serif;
+     line-height: 20px;
+     letter-spacing: 1px;
+     margin-top: 3px;
+   }
+   .header-logo h4 {
+    font-family: 'din-condensed', "Yu Gothic", "YuGothic", "Hiragino Kaku Gothic Pro", "Meiryo", verdana, "Osaka", "MS PGothic", Sans-Serif;
+    letter-spacing: 1px;
+   }
+   .header-site-menu {
+     position: absolute;
+     top: 100%;
+     left: 0;
+     right: 0;
+     color: #000000;
+     background-color: #e9e9e9;
+     display: none;
+   }
+   .site-menu ul li {
+    border: none;
+  }
+   .header-site-menu.is-show {
+     display: block;
+   }
+   .toggle-menu-button {
+     display: block;
+     width: 44px;
+     height: 34px;
+     background-image: url(../images/button.png);
+     background-size: 55%;
+     background-position: center;
+     background-repeat: no-repeat;
+     background-color: transparent;
+     border: none;
+     border-radius: 0;
+     outline: none;
+   }
+   .footer-site-menu li {
+     margin-top: 20px;
+     border: none;
+   }
+   .main {
+     padding-top: 50px;
+   }
+   .footer-logo {
+     margin-top: 60px;
+   }
+   /* .icon-footer {
+    display: none;  
+   } */
+   .copyright {
+     margin-top: 50px;
+   }
+}
